@@ -3,6 +3,7 @@
 
 # Don't ignore these specific items
 !.gitignore
+!README.md
 
 # Don't ignore these specific dirs
 !/hypr/
