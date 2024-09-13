@@ -1,0 +1,3 @@
+skip_dir = "/home/dei/OneDrive/IIT Classes/ECE590 Machine Learning/ECE590 Repo/venv"
+skip_dir = "__pycache__"
+skip_symlinks = "true"

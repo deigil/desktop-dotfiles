@@ -1,0 +1,21 @@
+{
+    "env": {
+        "PATH": "$(PATH):$(HOME)\/.local\/bin"
+    },
+    "apps": [
+        {
+            "name": "Desktop",
+            "image-path": "desktop.png"
+        },
+        {
+            "name": "Low Res Desktop",
+            "image-path": "desktop.png",
+            "prep-cmd": [
+                {
+                    "do": "xrandr --output DP-2 --mode 1920x1080",
+                    "undo": "xrandr --output DP-2 --mode 1920x1200"
+                }
+            ]
+        }
+    ]
+}

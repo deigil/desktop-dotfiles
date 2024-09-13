@@ -1,0 +1,26 @@
+# Ignore everything
+*
+
+# Don't ignore these specific items
+!.gitignore
+
+# Don't ignore these specific dirs
+!/hypr/
+!/waybar/
+!/waybar/scripts/
+!/onedrive/
+!/spicetify/
+!/spicetify/CustomApps/
+!/sunshine/
+
+# Don't ignore specific dir items
+!/onedrive/config
+!/hypr/hypr*
+!/spicetify/config*
+!/spicetify/CustomApps/*
+!/spicetify/CustomApps/marketplace/*
+!/sunshine/apps.json
+!/sunshine/sunshine.conf
+!/waybar/scripts/*
+!/waybar/config
+!/waybar/style.css
