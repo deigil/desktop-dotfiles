@@ -6,17 +6,26 @@
 !README.md
 
 # Don't ignore these specific dirs
+!/fish/
+!/fish/conf.d/
 !/hypr/
+!/hypr/scripts/
 !/waybar/
 !/waybar/scripts/
 !/onedrive/
 !/spicetify/
 !/spicetify/CustomApps/
 !/sunshine/
+!/pulse/
+!/pulse/patchbay/
 
 # Don't ignore specific dir items
+!/Cursor/User/settings.json
+!/fish/config.fish
+!/fish/conf.d/*
 !/onedrive/config
 !/hypr/hypr*
+!/hypr/scripts/wallpaper.sh
 !/spicetify/config*
 !/spicetify/CustomApps/*
 !/spicetify/CustomApps/marketplace/*
@@ -25,3 +34,5 @@
 !/waybar/scripts/*
 !/waybar/config
 !/waybar/style.css
+!/pulse/default*
+!/pulse/patchbay/*

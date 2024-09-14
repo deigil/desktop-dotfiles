@@ -1,0 +1,5 @@
+.include /etc/pulse/default.pa
+
+load-module module-switch-on-port-available
+load-module module-switch-on-connect
+set-card-profile alsa_card.pci-0000_0a_00.1 output:hdmi-stereo+output:hdmi-stereo-extra1

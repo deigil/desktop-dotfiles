@@ -5,17 +5,11 @@
     "apps": [
         {
             "name": "Desktop",
-            "image-path": "desktop.png"
-        },
-        {
-            "name": "Low Res Desktop",
-            "image-path": "desktop.png",
-            "prep-cmd": [
-                {
-                    "do": "xrandr --output DP-2 --mode 1920x1080",
-                    "undo": "xrandr --output DP-2 --mode 1920x1200"
-                }
-            ]
+            "image-path": "\/home\/dei\/Pictures\/archlinux.png",
+            "exclude-global-prep-cmd": "",
+            "auto-detach": "true",
+            "wait-all": "true",
+            "exit-timeout": "5"
         }
     ]
 }
