@@ -12,7 +12,9 @@
     "modules-right": [
         "custom/updates", 
         "custom/keyboard-layout", 
-        "pulseaudio", "tray", "custom/weather", 
+        "pulseaudio", 
+        "tray", 
+        "custom/weather", 
         "clock", 
         "custom/power"
     ],
