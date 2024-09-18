@@ -6,6 +6,8 @@
 !README.md
 
 # Don't ignore these specific dirs
+!/Cursor/
+!/Cursor/User/
 !/fish/
 !/fish/conf.d/
 !/hypr/
