@@ -6,6 +6,7 @@
 !README.md
 
 # Don't ignore these specific dirs
+!/autostart/
 !/Cursor/
 !/Cursor/User/
 !/fish/
@@ -22,6 +23,7 @@
 !/pulse/patchbay/
 
 # Don't ignore specific dir items
+!/autostart/wallpaper.desktop
 !/Cursor/User/settings.json
 !/fish/config.fish
 !/fish/conf.d/*
