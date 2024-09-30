@@ -125,7 +125,7 @@
         "format-ethernet": "{icon} {ifname} ⇣{bandwidthDownBytes} ⇡{bandwidthUpBytes}"
     },
     "pulseaudio": {
-        "scroll-step": 3,
+        "scroll-step": 5,
         "format": "{icon} {volume}% {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",

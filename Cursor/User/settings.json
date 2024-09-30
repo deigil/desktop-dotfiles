@@ -30,5 +30,6 @@
     "explorer.confirmDelete": false,
     "editor.fontFamily": "'FiraCode Nerd Font', 'Droid Sans Mono', 'monospace', monospace",
     "editor.wordWrap": "on",
-    "explorer.compactFolders": false
+    "explorer.compactFolders": false,
+    "redhat.telemetry.enabled": false
 }

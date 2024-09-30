@@ -1,0 +1,4 @@
+[Unit]
+Description=Waybar Check
+[Service]
+ExecStart=/home/dei/.config/waybar/scripts/check_waybar.sh

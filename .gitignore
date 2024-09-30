@@ -6,6 +6,9 @@
 !README.md
 
 # Don't ignore these specific dirs
+!/alsa-card-profile/
+!/alsa-card-profile/mixer/
+!/alsa-card-profile/mixer/profile-sets/
 !/autostart/
 !/Cursor/
 !/Cursor/User/
@@ -21,8 +24,11 @@
 !/sunshine/
 !/pulse/
 !/pulse/patchbay/
+!/systemd/
+!/systemd/user/
 
 # Don't ignore specific dir items
+!/alsa-card-profile/mixer/profile-sets/*
 !/autostart/wallpaper.desktop
 !/Cursor/User/settings.json
 !/fish/config.fish
@@ -36,6 +42,7 @@
 !/spicetify/CustomApps/marketplace/*
 !/sunshine/apps.json
 !/sunshine/sunshine.conf
+!/systemd/user/*
 !/waybar/scripts/*
 !/waybar/config
 !/waybar/style.css
