@@ -1,3 +1,11 @@
-skip_dir = "/home/dei/OneDrive/IIT Classes/ECE590 Machine Learning/ECE590 Repo/venv"
-skip_dir = "__pycache__"
+# OneDrive Configuration File
+
+# Directories to skip during synchronization
+skip_dir = "IIT Classes/ECE590 Machine Learning/ECE590 Repo/venv"
+skip_dir = "IIT Classes/ECE590 Machine Learning/ECE590 Repo/__pycache__"
+
+# Skip symbolic links
 skip_symlinks = "true"
+
+# Optional: Set the logging level for debugging
+# enable_logging = "true"

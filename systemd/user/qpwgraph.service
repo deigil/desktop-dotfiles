@@ -1,0 +1,9 @@
+[Unit]
+Description=Start QPWGraph
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/qpwgraph -a -m
+
+[Install]
+WantedBy=default.target

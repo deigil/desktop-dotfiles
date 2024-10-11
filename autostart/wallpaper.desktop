@@ -1,8 +1,0 @@
-   [Desktop Entry]
-   Type=Application
-   Exec=/home/dei/.config/hypr/scripts/wallpaper.sh
-   Hidden=true
-   NoDisplay=true
-   X-GNOME-Autostart-enabled=true
-   Name=MPV Wallpaper
-   Comment=Run MPV Wallpaper on startup

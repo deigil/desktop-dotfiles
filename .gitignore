@@ -9,7 +9,6 @@
 !/alsa-card-profile/
 !/alsa-card-profile/mixer/
 !/alsa-card-profile/mixer/profile-sets/
-!/autostart/
 !/Cursor/
 !/Cursor/User/
 !/fish/
@@ -26,10 +25,10 @@
 !/pulse/patchbay/
 !/systemd/
 !/systemd/user/
+!/vesktop/
 
 # Don't ignore specific dir items
 !/alsa-card-profile/mixer/profile-sets/*
-!/autostart/wallpaper.desktop
 !/Cursor/User/settings.json
 !/fish/config.fish
 !/fish/conf.d/*
@@ -41,6 +40,8 @@
 !/spicetify/CustomApps/*
 !/spicetify/CustomApps/marketplace/*
 !/sunshine/apps.json
+!/sunshine/set.sh
+!/sunshine/reset.sh
 !/sunshine/sunshine.conf
 !/systemd/user/*
 !/waybar/scripts/*
@@ -48,3 +49,8 @@
 !/waybar/style.css
 !/pulse/default*
 !/pulse/patchbay/*
+!/vesktop/settings.json
+!/vesktop/settings/
+!/vesktop/settings/settings.json
+!/vesktop/themes/
+!/vesktop/themes/*
