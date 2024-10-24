@@ -173,3 +173,9 @@ alias rip 'expac --timefmt="%Y-%m-%d %T" "%l\t%n %v" | sort | tail -200 | nl'
 if status --is-interactive && type -q fastfetch
    fastfetch --config neofetch.jsonc
 end
+
+## System command aliases for session management
+alias reboot '~/.config/hypr/scripts/pre-shutdown.sh reboot'
+alias poweroff '~/.config/hypr/scripts/pre-shutdown.sh shutdown'
+alias shutdown '~/.config/hypr/scripts/pre-shutdown.sh shutdown'
+alias logout '~/.config/hypr/scripts/pre-shutdown.sh logout'

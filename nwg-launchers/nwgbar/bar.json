@@ -1,7 +1,7 @@
 [
   {
     "name": "_Lock screen",
-    "exec": "swaylock -f -i '/usr/share/wallpapers/garuda-wallpapers/Garuda-TilliDie-cube-105.png'",
+    "exec": "sleep 0.1 && hyprlock",
     "icon": "/usr/share/nwg-launchers/nwgbar/images/lock.svg"
   },
   {
@@ -11,17 +11,17 @@
   },
   {
     "name": "Logou_t",
-    "exec": "~/.config/hypr/scripts/pre-shutdown.sh && hyprctl dispatch exit",
+    "exec": "/home/dei/.config/hypr/scripts/pre-shutdown.sh logout",
     "icon": "/usr/share/nwg-launchers/nwgbar/images/logout.svg"
   },
   {
     "name": "_Reboot",
-    "exec": "systemctl reboot",
+    "exec": "/home/dei/.config/hypr/scripts/pre-shutdown.sh reboot",
     "icon": "/usr/share/nwg-launchers/nwgbar/images/reboot.svg"
   },
   {
     "name": "_Shutdown",
-    "exec": "systemctl -i poweroff",
+    "exec": "/home/dei/.config/hypr/scripts/pre-shutdown.sh shutdown",
     "icon": "/usr/share/nwg-launchers/nwgbar/images/shutdown.svg"
   }
 ]
