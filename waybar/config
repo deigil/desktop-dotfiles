@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "output": ["DP-5"],
+    "output": ["DP-4"],
     "position": "top",
     "height": 40,
     "width": 3440,
@@ -10,6 +10,7 @@
     "modules-left": ["hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": [
+        "custom/spotify",
         "idle_inhibitor",
         "custom/updates", 
         "custom/keyboard-layout", 
@@ -25,7 +26,9 @@
         "on-click": "activate",
         "all-outputs": true,
         "format-icons": {
-            "11":""
+            // "11":""
+            "11": "11",
+            "12": "12"
         },
         "on-scroll-up": "hyprctl dispatch workspace e+1",
         "on-scroll-down": "hyprctl dispatch workspace e-1"
@@ -146,8 +149,16 @@
         "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
     },
     "custom/weather": {
-        "exec": "curl 'https://wttr.in/Chicago?format=1'",
+        "exec": "curl -s --fail 'https://wttr.in/Chicago?format=1' || echo ''",
         "interval": 900,
         "on-click": "yad --html --uri='https://wttr.in/Chicago' --center --fixed --width=1000 --height=680 --timeout=60 --timeout-indicator=right"
+    },
+    "custom/spotify": {
+    "exec": "/usr/bin/python /home/dei/.config/waybar/scripts/mediaplayer.py --player spotify",
+    "format": "{}  ",
+    "return-type": "json",
+    "on-click": "/usr/bin/python /home/dei/.config/waybar/scripts/mediaplayer.py --player \"spotify\" --action play-pause",
+    "on-scroll-up": "/usr/bin/python /home/dei/.config/waybar/scripts/mediaplayer.py --player \"spotify\" --action next",
+    "on-scroll-down": "/usr/bin/python /home/dei/.config/waybar/scripts/mediaplayer.py --player \"spotify\" --action previous"
     }
 }

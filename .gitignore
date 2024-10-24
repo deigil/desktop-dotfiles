@@ -15,6 +15,7 @@
 !/fish/conf.d/
 !/hypr/
 !/hypr/scripts/
+!/hypr/session/
 !/waybar/
 !/waybar/scripts/
 !/onedrive/
@@ -26,6 +27,8 @@
 !/systemd/
 !/systemd/user/
 !/vesktop/
+!/nwg-launchers/
+!/nwg-launchers/nwgbar/
 
 # Don't ignore specific dir items
 !/alsa-card-profile/mixer/profile-sets/*
@@ -36,6 +39,8 @@
 !/hypr/hypr*
 !/hypr/scripts/wallpaper.sh
 !/hypr/scripts/wake.sh
+!/hypr/scripts/pre-shutdown.sh
+!/hypr/session/save.sh
 !/spicetify/config*
 !/spicetify/CustomApps/*
 !/spicetify/CustomApps/marketplace/*
@@ -44,6 +49,8 @@
 !/sunshine/reset.sh
 !/sunshine/sunshine.conf
 !/systemd/user/*
+!/systemd/user/save-hypr-session.service
+!/systemd/user/restore-hypr-session.service
 !/waybar/scripts/*
 !/waybar/config
 !/waybar/style.css
@@ -54,3 +61,4 @@
 !/vesktop/settings/settings.json
 !/vesktop/themes/
 !/vesktop/themes/*
+!/nwg-launchers/nwgbar/bar.json

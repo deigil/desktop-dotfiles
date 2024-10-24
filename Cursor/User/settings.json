@@ -32,5 +32,14 @@
     "editor.wordWrap": "on",
     "explorer.compactFolders": false,
     "redhat.telemetry.enabled": false,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "window.confirmSaveUntitledWorkspace": false,
+    "cmake.showOptionsMovedNotification": false,
+    "git.openRepositoryInParentFolders": "always",
+    "makefile.configureOnOpen": true,
+    "cursor.cpp.enablePartialAccepts": true,
+    "cursor.chat.smoothStreaming": true,
+    "cursor.chat.premiumChatAutoScrollWhenAtBottom": true,
+    "cursor.chat.collapseInputBoxPills": true,
+    "cursor.cmdk.useThemedDiffBackground": true
 }
