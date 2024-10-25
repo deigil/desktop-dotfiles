@@ -10,7 +10,6 @@ hyprctl clients -j > "$SESSION_DIR/windows.json"
 # Parse the JSON and create a restore script
 python3 - <<EOF > "$SESSION_DIR/restore.sh"
 import json
-import sys
 from pathlib import Path
 
 session_file = Path("$SESSION_DIR/windows.json")
@@ -49,6 +48,7 @@ for monitor in sorted(windows_by_monitor.keys()):
     for window in windows_by_monitor[monitor]:
         # Get relevant window properties
         class_name = window.get('class', '')
+        title = window.get('title', '')
         workspace = window.get('workspace', {}).get('name', '1')
         floating = window.get('floating', False)
         size = window.get('size', [800, 600])
@@ -65,29 +65,41 @@ for monitor in sorted(windows_by_monitor.keys()):
             print('sleep 0.5')
         
         # Handle different applications
-        if class_name == 'Cursor' and not cursor_launched:
-            print(f'/home/dei/Downloads/cursor-0.42.3x86_64.AppImage &')
-            cursor_launched = True
-            print('sleep 3')
-        elif class_name == 'Cursor':
-            continue
+        if class_name == 'Cursor':
+            if not cursor_launched:
+                print(f'/home/dei/Downloads/cursor-0.42.3x86_64.AppImage &')
+                cursor_launched = True
+                print('sleep 5')
+            # Move Cursor windows using movetoworkspacesilent with title
+            print(f'hyprctl dispatch movetoworkspacesilent {workspace},title:"{title}"')
         elif class_name == 'Vivaldi-stable':
             print(f'vivaldi-stable &')
         elif class_name == 'vesktop':
             print(f'vesktop &')
         elif class_name == 'jetbrains-studio':
             print(f'android-studio &')
+            print('sleep 3')
         elif class_name == 'org.gnome.SystemMonitor':
             print(f'gnome-system-monitor &')
+        elif class_name == 'Spotify':
+            print(f'spotify &')
         else:
-            print(f'# Unhandled application: {class_name}')
-            print(f'{class_name.lower()} &')
-            
+            # Generic handling for other applications
+            print(f'# Launching {class_name}')
+            print(f'if command -v {class_name.lower()} &> /dev/null; then')
+            print(f'    {class_name.lower()} &')
+            print(f'elif command -v flatpak &> /dev/null && flatpak list --app | grep -qi {class_name}; then')
+            print(f'    flatpak run $(flatpak list --app | grep -i {class_name} | awk \'{{print $2}}\')')
+            print(f'else')
+            print(f'    echo "Unable to launch {class_name}, please install it or add it to the script manually"')
+            print(f'fi')
+
+        # Position the window
+        print(f'sleep 0.5')
         if floating:
-            print(f'sleep 0.5')
             print(f'hyprctl dispatch togglefloating address:latest')
-            print(f'hyprctl dispatch movewindowpixel exact {at[0]} {at[1]} address:latest')
-            print(f'hyprctl dispatch resizewindowpixel exact {size[0]} {size[1]} address:latest')
+        print(f'hyprctl dispatch movewindowpixel exact {at[0]} {at[1]} address:latest')
+        print(f'hyprctl dispatch resizewindowpixel exact {size[0]} {size[1]} address:latest')
         
         print('sleep 1')
 EOF
