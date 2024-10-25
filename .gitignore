@@ -40,6 +40,8 @@
 !/hypr/scripts/wallpaper.sh
 !/hypr/scripts/wake.sh
 !/hypr/scripts/pre-shutdown.sh
+!/hypr/scripts/switch_monitor_workspace.sh
+!/hypr/scripts/workspace_manager.sh
 !/hypr/session/save.sh
 !/spicetify/config*
 !/spicetify/CustomApps/*
