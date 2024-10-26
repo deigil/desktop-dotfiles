@@ -22,6 +22,10 @@ if test -f ~/.fish_profile
   source ~/.fish_profile
 end
 
+if status --is-interactive
+    ssh_agent_start
+end
+
 # Add ~/.local/bin to PATH
 if test -d ~/.local/bin
     if not contains -- ~/.local/bin $PATH

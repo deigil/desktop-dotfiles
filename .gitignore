@@ -13,6 +13,7 @@
 !/Cursor/User/
 !/fish/
 !/fish/conf.d/
+!/fish/functions/
 !/hypr/
 !/hypr/scripts/
 !/hypr/session/
@@ -35,6 +36,7 @@
 !/Cursor/User/settings.json
 !/fish/config.fish
 !/fish/conf.d/*
+!/fish/functions/ssh_agent_start.fish
 !/onedrive/config
 !/hypr/hypr*
 !/hypr/scripts/wallpaper.sh
