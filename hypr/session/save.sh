@@ -34,8 +34,10 @@ for window in windows:
 for monitor in windows_by_monitor:
     windows_by_monitor[monitor].sort(key=get_workspace_sort_key)
 
-# Only track Cursor since it has its own session management
+# Track launched applications
 cursor_launched = False
+vivaldi_launched = False
+studio_launched = False
 
 # Process each monitor's windows
 for monitor in sorted(windows_by_monitor.keys()):
@@ -70,15 +72,54 @@ for monitor in sorted(windows_by_monitor.keys()):
                 print(f'/home/dei/Downloads/cursor-0.42.3x86_64.AppImage &')
                 cursor_launched = True
                 print('sleep 5')
-            # Move Cursor windows using movetoworkspacesilent with title
             print(f'hyprctl dispatch movetoworkspacesilent {workspace},title:"{title}"')
         elif class_name == 'Vivaldi-stable':
-            print(f'vivaldi-stable &')
+            # Determine which profile to use based on the window title/content
+            if any(keyword in title for keyword in ["Illinois Institute", "blackboard", "iit.edu"]):
+                profile = "Profile 1"  # School profile
+                if "Calendar" in title:
+                    url = "https://calendar.google.com"
+                else:
+                    url = "about:blank"  # or specific IIT URL
+            elif any(keyword in title for keyword in ["Zoho", "Invoice", "INV-", "xpressauto"]):
+                profile = "Profile 3"  # Work profile
+                if "Zoho Books" in title:
+                    url = "https://books.zoho.com"
+                else:
+                    url = "about:blank"  # or specific work URL
+            else:
+                # Personal profile for everything else (Gmail, GitHub, etc.)
+                profile = "Default"
+                if "Gmail" in title:
+                    url = "https://mail.google.com"
+                elif "github" in title.lower():
+                    url = "https://github.com/deigil"
+                else:
+                    url = "about:blank"
+
+            print(f'vivaldi-stable --profile-directory="{profile}" "{url}" &')
+            print(f'sleep 2')
+            print(f'for i in {{1..20}}; do')
+            print(f'    if hyprctl clients | grep -q "Vivaldi-stable"; then')
+            print(f'        hyprctl dispatch movetoworkspacesilent {workspace},class:Vivaldi-stable')
+            print(f'        break')
+            print(f'    fi')
+            print(f'    sleep 0.5')
+            print(f'done')
         elif class_name == 'vesktop':
             print(f'vesktop &')
         elif class_name == 'jetbrains-studio':
-            print(f'android-studio &')
-            print('sleep 3')
+            if not studio_launched:
+                print(f'android-studio &')
+                studio_launched = True
+                print(f'# Wait for Android Studio to fully launch')
+                print(f'for i in {{1..60}}; do')
+                print(f'    if hyprctl clients | grep -q "jetbrains-studio"; then')
+                print(f'        break')
+                print(f'    fi')
+                print(f'    sleep 1')
+                print(f'done')
+            print(f'hyprctl dispatch movetoworkspacesilent {workspace},class:jetbrains-studio')
         elif class_name == 'org.gnome.SystemMonitor':
             print(f'gnome-system-monitor &')
         elif class_name == 'Spotify':
