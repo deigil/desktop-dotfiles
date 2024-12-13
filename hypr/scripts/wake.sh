@@ -14,6 +14,8 @@ fi
 
 # Set your PulseAudio profile
 run_with_timeout pactl set-card-profile alsa_card.pci-0000_0a_00.1 output:hdmi-stereo+output:hdmi-stereo-extra1
+# Restart sound daemon
+# run_with_timeout systemctl --user restart pipewire{,-pulse} wireplumber
 
 # Exit the script
 exit 0

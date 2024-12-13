@@ -1,5 +1,8 @@
 .include /etc/pulse/default.pa
 
+# Load the combined HDMI profile
+load-module module-card-profile-set profile_set=9999-custom.conf
+
+# Automatically switch to available ports
 load-module module-switch-on-port-available
 load-module module-switch-on-connect
-set-card-profile alsa_card.pci-0000_0a_00.1 output:hdmi-stereo+output:hdmi-stereo-extra1

@@ -1,33 +1,181 @@
 <!DOCTYPE patchbay>
-<patchbay name="all-out" version="0.7.8">
+<patchbay name="all-out" version="0.8.0">
  <items>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium" port="Chromium:output_FL"/>
+   <output node="spotify" port="spotify:output_FL"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify" port="spotify:output_FR"/>
+   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-1" port="Chromium:output_FL"/>
+   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify" port="spotify:output_FR"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-3" port="Chromium:output_FR"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify" port="spotify:output_FR"/>
+   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium" port="Chromium:output_FR"/>
+   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="G34WQC:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="alsoft-1" port="alsoft:channel_2"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="mpv" port="mpv:output_FL"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify" port="spotify:output_FR"/>
+   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="G34WQC:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify" port="spotify:output_FL"/>
    <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium" port="Chromium:output_FL"/>
+   <output node="Chromium-2" port="Chromium:output_FR"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium" port="Chromium:output_FR"/>
+   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify" port="spotify:output_FR"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="mpv" port="mpv:output_FL"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="alsoft-1" port="alsoft:channel_1"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium" port="Chromium:output_FR"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify" port="spotify:output_FL"/>
    <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="G34WQC:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify" port="spotify:output_FR"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify" port="spotify:output_FL"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-1" port="Chromium:output_FR"/>
+   <input node="Family 17h (Models 00h-0fh) HD Audio Controller Analog Stereo" port="ALC1220 Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify" port="spotify:output_FR"/>
+   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="alsoft" port="alsoft:channel_2"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="ZOOM VoiceEngine" port="ZOOM VoiceEngine:output_FL"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="alsoft-1" port="alsoft:channel_1"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="alsoft" port="alsoft:channel_2"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="alsoft" port="alsoft:channel_2"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="G34WQC:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="mpv" port="mpv:output_FR"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium" port="Chromium:output_FL"/>
+   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify-1" port="spotify:output_FR"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify" port="spotify:output_FL"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify-1" port="spotify:output_FR"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-4" port="Chromium:output_FL"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="mpv" port="mpv:output_FR"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium" port="Chromium:output_FL"/>
+   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-1" port="Chromium:output_FR"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="alsoft" port="alsoft:channel_2"/>
+   <input node="Family 17h (Models 00h-0fh) HD Audio Controller Analog Stereo" port="ALC1220 Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium" port="Chromium:output_FR"/>
+   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-2" port="Chromium:output_FL"/>
+   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Chromium-1" port="Chromium:output_FR"/>
    <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="G34WQC:playback_FR"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="spotify" port="spotify:output_FL"/>
-   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FL"/>
+   <output node="Chromium" port="Chromium:output_FL"/>
+   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="G34WQC:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium-2" port="Chromium:output_FL"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FL"/>
+   <output node="alsoft" port="alsoft:channel_2"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FR"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Chromium" port="Chromium:output_FL"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FL"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium-2" port="Chromium:output_FL"/>
-   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="G34WQC:playback_FL"/>
+   <output node="Chromium-4" port="Chromium:output_FR"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FR"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="ZOOM VoiceEngine" port="ZOOM VoiceEngine:output_FL"/>
@@ -38,24 +186,36 @@
    <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FR"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="spotify" port="spotify:output_FL"/>
-   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FL"/>
+   <output node="Chromium-3" port="Chromium:output_FL"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="ZOOM VoiceEngine" port="ZOOM VoiceEngine:output_FR"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FR"/>
+   <output node="Chromium-1" port="Chromium:output_FR"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="alsoft" port="alsoft:channel_1"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="G34WQC:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Chromium-1" port="Chromium:output_FL"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-2" port="Chromium:output_FL"/>
    <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="G34WQC:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium" port="Chromium:output_FL"/>
-   <input node="sink-sunshine-stereo" port="sink-sunshine-stereo:playback_FL"/>
+   <output node="spotify" port="spotify:output_FL"/>
+   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="spotify-1" port="spotify:output_FL"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FL"/>
+   <output node="alsoft" port="alsoft:channel_1"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-2" port="Chromium:output_FL"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="spotify" port="spotify:output_FR"/>
@@ -66,40 +226,68 @@
    <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium" port="Chromium:output_FR"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="XV272U:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium-2" port="Chromium:output_FR"/>
-   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="G34WQC:playback_FR"/>
+   <output node="Chromium-3" port="Chromium:output_FL"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Chromium" port="Chromium:output_FR"/>
    <input node="sink-sunshine-stereo" port="sink-sunshine-stereo:playback_FR"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium" port="Chromium:output_FR"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="G34WQC:playback_FR"/>
+   <output node="Chromium-2" port="Chromium:output_FR"/>
+   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="G34WQC:playback_FR"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="spotify" port="spotify:output_FR"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="XV272U:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="spotify" port="spotify:output_FL"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="XV272U:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium" port="Chromium:output_FR"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="ZOOM VoiceEngine" port="ZOOM VoiceEngine:output_FL"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="XV272U:playback_FL"/>
+   <output node="Chromium-1" port="Chromium:output_FL"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Chromium" port="Chromium:output_FL"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="G34WQC:playback_FL"/>
+   <input node="sink-sunshine-stereo" port="sink-sunshine-stereo:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="alsoft" port="alsoft:channel_2"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify-1" port="spotify:output_FL"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-3" port="Chromium:output_FR"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify" port="spotify:output_FL"/>
+   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-2" port="Chromium:output_FL"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-1" port="Chromium:output_FL"/>
+   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="G34WQC:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="alsoft" port="alsoft:channel_1"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="ZOOM VoiceEngine" port="ZOOM VoiceEngine:output_FR"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-1" port="Chromium:output_FR"/>
+   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="ZOOM VoiceEngine" port="ZOOM VoiceEngine:output_FR"/>
+   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-2" port="Chromium:output_FR"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FR"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Chromium-1" port="Chromium:output_FL"/>
@@ -110,152 +298,28 @@
    <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium-1" port="Chromium:output_FR"/>
-   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="ZOOM VoiceEngine" port="ZOOM VoiceEngine:output_FR"/>
+   <output node="alsoft-1" port="alsoft:channel_2"/>
    <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FR"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="ZOOM VoiceEngine" port="ZOOM VoiceEngine:output_FR"/>
-   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
    <output node="spotify" port="spotify:output_FR"/>
-   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium" port="Chromium:output_FR"/>
-   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="G34WQC:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="ZOOM VoiceEngine" port="ZOOM VoiceEngine:output_FR"/>
    <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="XV272U:playback_FR"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium-1" port="Chromium:output_FL"/>
-   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="spotify" port="spotify:output_FR"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="spotify" port="spotify:output_FR"/>
-   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
    <output node="spotify" port="spotify:output_FL"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="spotify" port="spotify:output_FL"/>
-   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="G34WQC:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="spotify" port="spotify:output_FR"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="mpv" port="mpv:output_FL"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="ZOOM VoiceEngine" port="ZOOM VoiceEngine:output_FL"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="spotify" port="spotify:output_FR"/>
-   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="G34WQC:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="ZOOM VoiceEngine" port="ZOOM VoiceEngine:output_FR"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="spotify" port="spotify:output_FL"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium-2" port="Chromium:output_FR"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium" port="Chromium:output_FR"/>
-   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="mpv" port="mpv:output_FL"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="mpv" port="mpv:output_FR"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium" port="Chromium:output_FL"/>
-   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="spotify" port="spotify:output_FL"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="spotify-1" port="spotify:output_FR"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="ZOOM VoiceEngine" port="ZOOM VoiceEngine:output_FL"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="spotify" port="spotify:output_FL"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="spotify" port="spotify:output_FR"/>
-   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium-1" port="Chromium:output_FR"/>
-   <input node="Family 17h (Models 00h-0fh) HD Audio Controller Analog Stereo" port="ALC1220 Analog:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium" port="Chromium:output_FL"/>
    <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="XV272U:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="ZOOM VoiceEngine" port="ZOOM VoiceEngine:output_FL"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="spotify" port="spotify:output_FR"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium-2" port="Chromium:output_FL"/>
-   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Chromium" port="Chromium:output_FR"/>
-   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium" port="Chromium:output_FR"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="XV272U:playback_FR"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="G34WQC:playback_FR"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Chromium" port="Chromium:output_FL"/>
-   <input node="GP104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FL"/>
+   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI 2)" port="HDMI 1:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="spotify-1" port="spotify:output_FR"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="mpv" port="mpv:output_FR"/>
-   <input node="GA104 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 0:playback_FR"/>
+   <output node="alsoft" port="alsoft:channel_1"/>
+   <input node="Family 17h (Models 00h-0fh) HD Audio Controller Analog Stereo" port="ALC1220 Analog:playback_FL"/>
   </item>
  </items>
 </patchbay>

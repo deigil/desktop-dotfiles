@@ -1,5 +1,5 @@
 [Unit]
-Description=Save Hyprland session before shutdown
+Description=Save Hyprland session
 DefaultDependencies=no
 Before=exit.target
 

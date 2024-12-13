@@ -1,0 +1,9 @@
+[Unit]
+Description=Discord Rich Presence Client
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/arrpc
+
+[Install]
+WantedBy=default.target

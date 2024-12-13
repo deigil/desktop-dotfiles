@@ -41,5 +41,19 @@
     "cursor.chat.smoothStreaming": true,
     "cursor.chat.premiumChatAutoScrollWhenAtBottom": true,
     "cursor.chat.collapseInputBoxPills": true,
-    "cursor.cmdk.useThemedDiffBackground": true
+    "cursor.cmdk.useThemedDiffBackground": true,
+    "explorer.confirmPasteNative": false,
+    "cursor.chat.defaultNoContext": true,
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "vscord.app.id": "'Cursor'",
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": "off"
+    },
+    "discord.largeImageIdling": "Sipping Tea",
+    "discord.detailsIdling": "Thinking",
+    "discord.smallImage": "Cursor IDE",
+    "vscord.app.name": "Visual Studio Code",
+    "vscord.status.idle.timeout": 600
 }
