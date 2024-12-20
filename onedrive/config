@@ -5,6 +5,9 @@ skip_dir = "IIT Classes/ECE590 Machine Learning/ECE590 Repo/venv"
 skip_dir = "IIT Classes/ECE590 Machine Learning/ECE590 Repo/__pycache__"
 skip_dir = "IIT Classes/ECE541 Comm. Perf/Bonus Project/ns-allinone-3.43"
 
+# No sync File
+check_nosync = "true"
+
 # Skip symbolic links
 skip_symlinks = "true"
 

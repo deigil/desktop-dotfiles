@@ -18,8 +18,8 @@ CLASS_EXEC_MAP = {
     'org.gnome.SystemMonitor': 'gnome-system-monitor',
     'Spotify': 'spotify',
     'p3x-onenote': 'p3x-onenote',
-    'Cursor': '/home/dei/Downloads/cursor-0.43.4-build-241126w13goyvrs-x86_64.AppImage',
-    'cursor-url-handler': '/home/dei/Downloads/cursor-0.43.4-build-241126w13goyvrs-x86_64.AppImage'
+    'Cursor': '/home/dei/Downloads/cursor*',
+    'cursor-url-handler': '/home/dei/Downloads/cursor*'
 }
 
 def find_executable(command):
@@ -33,10 +33,9 @@ def generate_vivaldi_commands():
     vivaldi = find_executable('vivaldi-stable')
     commands = "\n# Launch Vivaldi profiles\n"
     
-    # Default profile in workspace 1
-    commands += "\n# Default profile - workspace 1\n"
-    commands += "hyprctl dispatch focusmonitor 1\n"
-    commands += "hyprctl dispatch workspace 1\n"
+    # Default profile in monitor 2
+    commands += "\n# Default profile - workspace 11\n"
+    commands += "hyprctl dispatch focusmonitor 2\n"
     commands += f"{vivaldi} --profile-directory='Default' &\n"
     commands += "sleep 5\n"
     
